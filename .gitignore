@@ -2,29 +2,29 @@
 # Some points pulled from https://gist.github.com/jdbartlett/444295
 
 # Ignore everything in the root except the "wp-content" directory.
-/*
+/app/*
 !/.gitignore
-!app/wp-content/
+!/app/wp-content/
 
 # Ignore everything in the "wp-content" directory, except the "plugins"
 and "themes" directories.
-app/wp-content/*
-!app/wp-content/themes/
+/app/wp-content/*
+!/app/wp-content/themes/
 
 # Ignore cache files in wp-content.
-app/wp-content/plugins/cache/
-app/wp-content/plugins/w3tc-config/
-app/wp-content/plugins/object-cache.php
-app/wp-content/plugins/db.php
-app/wp-content/plugins/advanced-cache.php
-app/wp-content/plugins/w3-total-cache-config.php
-app/wp-content/plugins/w3-total-cache-config-preview.php
+/app/wp-content/plugins/cache/
+/app/wp-content/plugins/w3tc-config/
+/app/wp-content/plugins/object-cache.php
+/app/wp-content/plugins/db.php
+/app/wp-content/plugins/advanced-cache.php
+/app/wp-content/plugins/w3-total-cache-config.php
+/app/wp-content/plugins/w3-total-cache-config-preview.php
 
 
 # Ignore everything in the "themes" directory, except the themes you
 # specify (see the commented-out example for a hint on how to do this.)
-app/wp-content/themes/*
-!app/wp-content/themes/mobigas/
+/app/wp-content/themes/*
+!/app/wp-content/themes/mobigas/
 
 #others
 .DS_Store
