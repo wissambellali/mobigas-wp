@@ -8,7 +8,7 @@
 
 # Ignore everything in the "wp-content" directory, except the "plugins"
 and "themes" directories.
-wp-content/*
+/app/wp-content/*
 !/app/wp-content/themes/
 
 # Ignore cache files in wp-content.
@@ -28,5 +28,4 @@ wp-content/*
 
 #others
 .DS_Store
-*~
 node_modules
